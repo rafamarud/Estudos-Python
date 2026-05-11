@@ -1,0 +1,27 @@
+#se for letra
+n = input('Digite algo: ')
+print(n.isalpha())
+
+#se for numero
+n1 = input('Digite algo: ')
+print(n.isnumeric())
+
+#sefor letra e numero
+n2 = input('Digite algo: ')
+print(n.isalnum()) 
+
+#se for maiusculo
+n3 = input('Digite algo: ')
+print(n.upper()) 
+
+#se for minusculo
+n4 = input('Digite algo: ')
+print(n.lower()) 
+
+#se for "printavel"
+n5 = input('Digite algo: ')
+print(n.isprintable()) 
+
+#se tem espaco
+n6 = input('Digite algo: ')
+print(n.isspace()) 

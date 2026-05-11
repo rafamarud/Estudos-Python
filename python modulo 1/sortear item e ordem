@@ -1,0 +1,17 @@
+import random
+
+
+a1 = input('Digite o nome do primeiro aluno: ')
+a2 = input('Digite o nome do primeiro segundo: ')
+a3 = input('Digite o nome do primeiro terceiro: ')
+a4 = input('Digite o nome do primeiro quarto: ')
+
+lista = [a1 ,a2, a3, a4]
+
+escolhido = random.choice(lista)
+
+print(f'O aluno sorteado foi: {escolhido}')
+
+random.shuffle(lista)
+
+print(f'A ordem sorteada foi: {lista}')
