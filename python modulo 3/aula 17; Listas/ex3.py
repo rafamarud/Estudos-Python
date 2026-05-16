@@ -5,11 +5,17 @@ while True:
     if len(lista) == 0:
         print('Adicionado ao final da lista...')
         lista.append(valor)
-    for i in lista:
-        if i < lista:
-            print(f'Adicionado na posicao {} da lista.')
-            lista.insert(lista.index(valor)-1, i)
-        else:
-            lista.insert(lista.index(valor)+1, i)
-    
+    else:
+        for i in lista:
+            if valor <= i:
+                indice = lista.index(i)
+                lista.insert(indice, valor)
+                print(f'Adicionado na posição {indice}')
+                break
+        else:   
+            lista.append(valor)
+            print(f'Valor adicionado na posica {len(lista) - 1}')      
+            
+
+    print(lista)
 
