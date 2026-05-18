@@ -31,7 +31,7 @@ while True:
     opcao2 = int(input('Mostar notas de qual aluno(999 para encerrar): '))
     if opcao2 == 999:
         break
-    if 0 <= opcao < len(alunos):
+    if 0 <= opcao2 < len(alunos):
         print(f'Notas de {alunos[opcao2][0]}: {alunos[opcao2][1:3]}')
     else:
         print('Nenhum aluno encontrado com esse indice.')
