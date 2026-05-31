@@ -50,6 +50,6 @@ while True:
     
         for i in range(0, lista[codigo]['partidas']):
             print(f'Na partida {i + 1}, fez {lista[codigo]["Gols"][i]} gol(s)')
-            print(f'Foi um total de {lista[codigo]["Total"]} gol(s).')
+        print(f'Foi um total de {lista[codigo]["Total"]} gol(s).')
 
 

@@ -25,6 +25,7 @@ def contador(i, f, p):
 contador(2, 10 ,2)
 
 help(contador)
+
     
 
     
