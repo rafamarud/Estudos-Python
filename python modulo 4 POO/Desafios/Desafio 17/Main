@@ -1,0 +1,29 @@
+from Produto import Produto
+
+produtos = []
+
+while True:
+    opcao = input("Deseja cadastrar um produto?[S/N]: ").upper()
+
+    if opcao == "S":
+        p = Produto()
+
+        p.nome = input("Nome: ")
+        p.preco = input("Preco: ")
+        p.codigo = input("Codigo: ")
+
+        produtos.append(p)
+
+    
+    elif opcao == "N":
+        opcao = input("Deseja ver a lista de produtos?[S/N]: ").upper()
+
+        if opcao == "S":
+            print(produtos)
+
+        break
+        
+    else:
+        print("Opcao inváliade!!(Apenas S ou N)")
+
+        
