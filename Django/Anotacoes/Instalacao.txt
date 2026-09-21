@@ -1,0 +1,60 @@
+1. Verificar o Python
+py --version
+
+E verificar o pip:
+
+py -m pip --version
+
+2. Instalar o Pipenv
+O Pipenv acabou instalado no Python principal com:
+
+py -m pip install --user pipenv
+
+Para verificar:
+
+py -m pip show pipenv
+
+3. Criar/usar o ambiente virtual com Pipenv
+O Pipenv criou o ambiente virtual do projeto. Depois, dentro de:
+
+D:\Documents\Estudos-Python
+
+usamos:
+
+pipenv install django
+
+Esse é o comando importante: ele instalou o Django no ambiente virtual do projeto, não globalmente.
+
+4. Verificar o Django
+Fora do ambiente virtual:
+
+pipenv run python -m django --version
+
+Resultado:
+
+6.1.1
+
+Ou, depois de entrar no ambiente:
+
+pipenv shell
+
+podemos usar:
+
+python -m django --version
+
+Resultado:
+
+6.1.1
+
+5. Ver os pacotes instalados
+O comando correto é:
+
+pip freeze
+
+6.
+
+Criar um app
+    python manage.py startapp meuapp
+
+Iniciar o server django 
+    python manage.py runserver
