@@ -1,0 +1,53 @@
+Model-View-Template (MVT)
+
+    -Separa a lofica da aplicação em 3 componentes
+        - Model:
+            - Representa a estrutura de dados (Seu banco de dados)
+            - Define o esquema do seu banco de dados
+            - Encapsula a logica que interage com o banco de dados
+        
+        - View:
+            - Função do python ou classe que recebe solicitacoes HTTP
+                e retorna repostas em HTTP
+            - Responsavel por processar as entradas de solicitacoes interagindo
+                com o banco de dados através do Modele prepara os dados para 
+                serem renderizados em uma reposta
+
+        - Template:
+            - São documentos HTML que contém a estrutura da interface do usuario
+                da sua aplicação web
+            - Inclui Place holders, template tags, que são substituídos por conteúdo dinâmico
+                pelo django
+    
+    - Como funciona:
+        - O usuario interage com a aplicação django enviando solicitacoes HTTP para URL's 
+            específicas, que podem ser para variadas ações
+                - Ver uma pagina
+                - Enviar um documento 
+                - Ou qualquer outra operação
+
+        - O view processa as solicitacoes, interage com o banco de dados e prepara os dados 
+            para serem renderizados na resposta
+
+        - Quando o view interage com o model para buscar dados do banco, ele faz isso utilizando
+            o Django's ORM(Object Relational Mapping)
+                - ORM:
+                    - Permite a interação com o banco de dados usando python objects, entao ao inves
+                        de usar SQL queries diretamente, voce define a estrutura do seu banco usando
+                        python classes chamadas MODELS, que representam tabelas do banco e cada 
+                        atributo da classe corresponde a uma coluna dessa tabela
+        
+        - A interacao do View e do Model:
+            - Não serve apenas para recuperar dados
+            - Pode servir para criar, atualizar ou deletar registros
+        
+        - Após processamento das solicitacoes no view:
+            - Prepara dados para sem renderizados em uma resposta 
+            - Esses dados sao passados para um template usando o Django template language
+                - Utilizando template tags e placeholders para gerar HTML
+            - View retorna uma resposta HTML contendo o conteudo HTML gerado pelo template
+            - A reposta é enviada para o browser do usuario, que carrega a pagina e disponibiliza
+                para o usuario
+
+            
+            

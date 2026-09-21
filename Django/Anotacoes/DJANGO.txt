@@ -1,0 +1,29 @@
+Django: 
+    
+    Framework python-based, designado para rapido desenvolvimento
+    de eficientes aplicações web
+
+    Providencia features embutidas para variados aspectos de desenvolvimento
+    web
+        - Django admin interface
+        - Default database management system
+            -SQL light 3
+        - ETC...
+
+Pq usar Django: 
+
+    - Desenvolvimento rapido:
+        Permite o desenvolvimento de aplicações web inteiras em
+        um curto perido de tempo
+    - Flexibilidade de database
+        SQL light 3 é o padrao porém o django permite utilizar outros
+        banco de dados
+            -PSQL
+            -SQL Alchemy
+    -Possui Admin interface
+        Simplica a administracao de tarefas relacionadas com o desenvolvimento
+        web
+    -Ecossitema extendido
+        Possui uma vasta quantidade de novas bibliotecas que estao disponiveis
+        para funcionalidades extra
+
