@@ -27,3 +27,5 @@ Pq usar Django:
         Possui uma vasta quantidade de novas bibliotecas que estao disponiveis
         para funcionalidades extra
 
+    -Migrations
+        Maneira do django propagar as alterações no models(adicionar um campo ou editar um campo)

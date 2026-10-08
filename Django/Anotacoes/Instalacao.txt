@@ -15,20 +15,21 @@ Para verificar:
 py -m pip show pipenv
 
 3. Criar/usar o ambiente virtual com Pipenv
+py -m venv venv
 O Pipenv criou o ambiente virtual do projeto. Depois, dentro de:
 
 D:\Documents\Estudos-Python
 
 usamos:
 
-pipenv install django
+py -m pipenv install django
 
 Esse é o comando importante: ele instalou o Django no ambiente virtual do projeto, não globalmente.
 
 4. Verificar o Django
 Fora do ambiente virtual:
 
-pipenv run python -m django --version
+py -m pipenv run python -m django --version
 
 Resultado:
 
@@ -36,11 +37,11 @@ Resultado:
 
 Ou, depois de entrar no ambiente:
 
-pipenv shell
+py -m pipenv shell
 
 podemos usar:
 
-python -m django --version
+py -m django --version
 
 Resultado:
 
@@ -58,3 +59,15 @@ Criar um app
 
 Iniciar o server django 
     python manage.py runserver
+
+
+*** DIRETÓRIO correto
+primeiro worldtour
+cd D:\Documents\Estudos-Python\Django\worldtour
+
+*** CRIAR UM PROJETO 
+python -m django startproject worldtour
+
+** python manage.py makemigrations
+
+** python manage.py migrate
