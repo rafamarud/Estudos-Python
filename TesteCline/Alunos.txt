@@ -1,0 +1,21 @@
+# Formato: id;nome;ano;turma
+1;Ana Souza;8;A
+2;Bruno Lima;8;A
+3;Carla Dias;8;B
+4;Diego Alves;8;B
+5;Eduarda Rocha;9;A
+6;Felipe Castro;9;A
+7;Gabriela Nunes;9;B
+8;Henrique Pinto;9;B
+9;Isabela Martins;6;A
+10;João Pedro Ramos;6;A
+11;Karen Ribeiro;6;B
+12;Lucas Fernandes;7;A
+13;Mariana Gomes;7;A
+14;Nicolas Barros;7;B
+15;Olivia Correia;8;A
+16;Paulo Henrique;8;B
+17;Quintino Reis;9;A
+18;Rafaela Moraes;9;B
+19;Samuel Teixeira;6;A
+20;Tatiana Pires;7;B
